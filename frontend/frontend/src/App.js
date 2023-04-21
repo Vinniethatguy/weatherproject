@@ -1,22 +1,21 @@
-import './App.css';
-
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:4000/test/")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
-    <div className="App">
-      <header>
-        <nav className='nav'>
-        <div className="header">
-          <ul className= "nav-items">
-            <li>Home</li>
-            <li>Register</li>
-            <li>Login</li>
-            <li>User Profile</li>
-          </ul>
-          </div>
-        </nav>
-        
-      </header>
+    <div>
+      <ul>
+        {data.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
     </div>
   );
 }
