@@ -18,6 +18,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 CORS_ALLOW_ALL_ORIGINS = True # If this is used then `CORS_ALLOWED_ORIGINS` will not have any effect
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:4000"
+]
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 

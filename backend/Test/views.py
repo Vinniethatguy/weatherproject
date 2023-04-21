@@ -11,5 +11,5 @@ class Test(APIView):
             },
             "id" : "2",
             "title" : "Person"
-            }
+          }
         return Response(data)
