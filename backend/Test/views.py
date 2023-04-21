@@ -9,7 +9,7 @@ class Test(APIView):
                 "username" : "ExampleMan",
                 "photo_id" : "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             },
-            "color" : "Blue",
-            "number" : "5"
+            "id" : "2",
+            "title" : "Person"
             }
         return Response(data)
