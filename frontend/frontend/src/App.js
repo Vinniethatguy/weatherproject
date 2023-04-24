@@ -46,10 +46,10 @@ function App() {
 				</nav>
 			</header>
       <Routes>
-      <Route exact path='/' element={< Home />}></Route>
-      <Route exact path='/login' element={< Login />}></Route>
-      <Route exact path='/' element={< Register />}></Route>
-      <Route exact path='/' element={< UserProfile />}></Route>
+            <Route exact path='/' element={< Home />}></Route>
+            <Route exact path='/login' element={< Login />}></Route>
+            <Route exact path='/' element={< Register />}></Route>
+            <Route exact path='/' element={< UserProfile />}></Route>
       </Routes>
       </Router>
 

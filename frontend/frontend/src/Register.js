@@ -1,8 +1,13 @@
 import React from 'react'
+import { Form } from 'react-router-dom'
 
 function Register() {
   return (
-    <div>Register</div>
+    <div>
+        <Form>
+  
+        </Form>
+    </div>
   )
 }
 
