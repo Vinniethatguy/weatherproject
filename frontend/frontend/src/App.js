@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BrowserRouter as  Link } from 'react-router-dom';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
+import Login from './login'
+import Register from './Register';
+import UserProfile from './UserProfile';
+import Home from './Home';
 
 
 function App() {
@@ -16,10 +20,10 @@ function App() {
         console.log(error);
       });
   }, []);
-
+  
   return (
     <div>
-      
+      <Router>
       <header>
 				<nav className='nav'>
 					<a className = 'title' href='/'>Weather App</a>
@@ -41,7 +45,16 @@ function App() {
 					</div>
 				</nav>
 			</header>
+      <Routes>
+      <Route exact path='/' element={< Home />}></Route>
+      <Route exact path='/login' element={< Login />}></Route>
+      <Route exact path='/' element={< Register />}></Route>
+      <Route exact path='/' element={< UserProfile />}></Route>
+      </Routes>
+      </Router>
+
     </div>
+
   );
 }
 
