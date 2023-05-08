@@ -15,9 +15,6 @@ class Test(APIView):
             "Zip Code": "64133",
             "Temperature": "70",
             "Feels Like": "55",
-            "Precipitation" : "0%",
-            "Humidity": "21%",
-            "Wind":"10mph",
             "Date": "April 24",
             "Time": "10:00",
             "Forcast": "Sunny"
