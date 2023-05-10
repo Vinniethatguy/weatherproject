@@ -29,11 +29,5 @@
 }
 
 .nav li:hover {
-  background-color: rgb(59, 56, 56);
-}
-
-.title{
-  font-size: 2rem;
-  margin-left: 30px;
-  background: none;
+  background-color: grey;
 }

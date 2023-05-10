@@ -10,14 +10,6 @@ class Test(APIView):
                 "photo_id" : "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             },
             "id" : "2",
-            "State": "MO",
-            "City" : "Kansas City",
-            "Zip Code": "64133",
-            "Temperature": "70",
-            "Feels Like": "55",
-            "Date": "April 24",
-            "Time": "10:00",
-            "Forcast": "Sunny"
-            
+            "title" : "Person"
           }
         return Response(data)
