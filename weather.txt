@@ -1,0 +1,26 @@
+{
+    weatherInfo: {
+        location: 'Columbia MO'
+        days: [
+            ("Sunday", "May 07, 2023", 90, 23, 1000, url),
+            ("Monday", "May 08, 2023", 90, 23, 1000, url),
+            ("Tuesday", "May 09, 2023", 90, 23, 1000, url),
+            ("Wednesday", "May 10, 2023", 90, 23, 1000, url),
+			("Thursday", "May 11, 2023", 90, 23, 1000, url)
+            ]
+    }
+}
+
+{
+    weatherInfo: {
+        location: location_data(str) -> 'Columbia MO'
+        day_weather: [
+			(
+			day_of_the_week(str), 
+			full_date("month Date, Year")(str), 
+			temp(int), 
+			lowtemp(int), 
+			hightemp(int)), (...)]
+			URL(WEATHER IMAGE)(str)
+    }
+}
