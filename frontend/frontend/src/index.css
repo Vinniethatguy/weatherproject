@@ -1,33 +1,42 @@
-.nav{
-  background-color: #e35700;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 1rem;
-  align-items: stretch;
+body{
+  position: relative;
+width: 1512px;
+height: 982px;
 }
 
-.nav ul{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin-top: 5%;
+.card-body {
+  position: absolute;
+  width: 450px;
+  height: 119px;
+  left: 91px;
+  top: 14px;
+  background: #E9D8A6;
+  border-radius: 33px;
 }
 
-.nav-items {
-  color: white;
-  background: none;
+#text{
+  height: 29px;
+width: 209px;
+left: 129px;
+top: 38px;
+border-radius: nullpx;
+
+}
+.time card-text{
+position: absolute;
+height: 29px;
+width: 209px;
+left: 129px;
+top: 38px;
+border-radius: nullpx;
+
+
 }
 
-.nav a{
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav li:hover {
-  background-color: grey;
+.time{
+  position: absolute;
+width: 74px;
+height: 29px;
+left: 129px;
+top: 81px;
 }

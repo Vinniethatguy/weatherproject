@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Header from './header';
 
 function App() {
   const [data, setData] = useState([]);
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <h1>Posts</h1>
+      <Header></Header>
        <ul>
       </ul>
     </div>
