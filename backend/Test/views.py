@@ -5,11 +5,15 @@ from rest_framework.response import Response
 class Test(APIView):
     def get(self, request):
         data = {
-            "user" : {
-                "username" : "ExampleMan",
-                "photo_id" : "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            },
-            "id" : "2",
-            "title" : "Person"
-          }
+            "weatherInfo": {
+                "location": 'Columbia MO',
+                "days":  [
+                    ("Sunday", "May 07, 2023", 90, 23, 1000, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcute-flat-sun-icon-gm1124567572-295276738&psig=AOvVaw2Jl2bhbNWBe4b909o_Y9q6&ust=1684010351646000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCWkMnR8P4CFQAAAAAdAAAAABAD"),
+                    ("Monday", "May 08, 2023", 90, 23, 1000, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcute-flat-sun-icon-gm1124567572-295276738&psig=AOvVaw2Jl2bhbNWBe4b909o_Y9q6&ust=1684010351646000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCWkMnR8P4CFQAAAAAdAAAAABAD"),
+                    ("Tuesday", "May 09, 2023", 90, 23, 1000, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcute-flat-sun-icon-gm1124567572-295276738&psig=AOvVaw2Jl2bhbNWBe4b909o_Y9q6&ust=1684010351646000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCWkMnR8P4CFQAAAAAdAAAAABAD"),
+                    ("Wednesday", "May 10, 2023", 90, 23, 1000, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcute-flat-sun-icon-gm1124567572-295276738&psig=AOvVaw2Jl2bhbNWBe4b909o_Y9q6&ust=1684010351646000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCWkMnR8P4CFQAAAAAdAAAAABAD"),
+                    ("Thursday", "May 11, 2023", 90, 23, 1000, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcute-flat-sun-icon-gm1124567572-295276738&psig=AOvVaw2Jl2bhbNWBe4b909o_Y9q6&ust=1684010351646000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCWkMnR8P4CFQAAAAAdAAAAABAD")
+                    ]
+        }
+        }
         return Response(data)
