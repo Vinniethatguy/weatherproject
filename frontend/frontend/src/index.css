@@ -1,7 +1,8 @@
 body{
   position: relative;
-width: 1512px;
-height: 982px;
+  width: 1512px;
+  height: 982px;
+  background-color: rgb(55, 70, 97);
 }
 
 .card-body {
@@ -16,12 +17,12 @@ height: 982px;
 
 #text{
   height: 29px;
-width: 209px;
-left: 129px;
-top: 38px;
-border-radius: nullpx;
-
+  width: 209px;
+  left: 129px;
+  top: 38px;
+  border-radius: nullpx;
 }
+
 .time card-text{
 position: absolute;
 height: 29px;
