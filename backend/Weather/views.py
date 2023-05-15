@@ -8,4 +8,12 @@ class AddCityView(APIView):
     
     def post(self, request):
         print("state_id: ",request.data['state_id'])
+        location_data = {
+            "city": request.data['city'],
+            "state": request.data['state'],
+            "state_id": request.data['state_id'],
+            "latitude":request.data['latitude'],
+            "longitude": request.data['longitude'],
+        }
+        print(location_data)
         return Response("I am post there")

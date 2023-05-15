@@ -7,6 +7,7 @@ def read_file():
                 data = line.split(',')
                 print(data)
             if index != 0:
+                line = ''.join([x for x in line if x!='"'])
                 data = line.split(',')
                 city = data[0]
                 state_name = data[3]
@@ -25,15 +26,16 @@ def main():
         # new_line = (city, state_name, state_id, latitude, longitude, zipcodes)
         data = {
             "city": line[0],
-            "state_name" : line[1],
-            "state_id" : line[2],
-            "latitude" : line[3],
+            "state": line[1],
+            "state_id": line[2],
+            "latitude": line[3],
             "longitude": line[4],
             "zip_codes": line[5]
         }
         response = requests.post('http://127.0.0.1:8000/weather/add_city/',data=data)
         print(response)
         print(response.content)
+        break
 
 
 if __name__ == "__main__":
