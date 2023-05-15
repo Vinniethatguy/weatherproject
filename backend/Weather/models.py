@@ -12,6 +12,7 @@ class Zip(models.Model):
     location_id = models.ForeignKey(Locations, on_delete = models.CASCADE)
     class Meta:
         unique_together = ('zipcode', 'location_id')
+        
     
 
     

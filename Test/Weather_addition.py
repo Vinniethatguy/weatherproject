@@ -1,3 +1,4 @@
+import requests
 def read_file():
     complete_data =[]
     with open('uscities.csv', 'r') as file:
@@ -19,8 +20,21 @@ def read_file():
 
 def main():
     information = read_file()
-    for city in information:
-        print(city[0])
+    for line in information:
+        print(line)
+        # new_line = (city, state_name, state_id, latitude, longitude, zipcodes)
+        data = {
+            "city": line[0],
+            "state_name" : line[1],
+            "state_id" : line[2],
+            "latitude" : line[3],
+            "longitude": line[4],
+            "zip_codes": line[5]
+        }
+        response = requests.post('http://127.0.0.1:8000/weather/add_city/',data=data)
+        print(response)
+        print(response.content)
+
 
 if __name__ == "__main__":
     main()

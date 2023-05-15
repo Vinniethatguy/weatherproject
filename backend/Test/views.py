@@ -14,6 +14,6 @@ class Test(APIView):
                     ("Wednesday", "May 10, 2023", 90, 23, 1000, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcute-flat-sun-icon-gm1124567572-295276738&psig=AOvVaw2Jl2bhbNWBe4b909o_Y9q6&ust=1684010351646000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCWkMnR8P4CFQAAAAAdAAAAABAD"),
                     ("Thursday", "May 11, 2023", 90, 23, 1000, "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvector%2Fcute-flat-sun-icon-gm1124567572-295276738&psig=AOvVaw2Jl2bhbNWBe4b909o_Y9q6&ust=1684010351646000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCWkMnR8P4CFQAAAAAdAAAAABAD")
                     ]
-        }
+            }
         }
         return Response(data)
