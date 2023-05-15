@@ -1,25 +1,31 @@
-import Card from "react-bootstrap/Card";
-import React from "react";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-
-function Header() {
+function AutoLayoutExample() {
   return (
-    <Card>
-    <Card.Body>
-      <Card.Subtitle>
-      </Card.Subtitle>
-      <Card.Text className="userIntro" >
-      Good Morning Vinnie 
-      <br />
-      <br />
-      <br />
-      <br />
-      <Card.Text>12:30PM</Card.Text>
-        
-      </Card.Text>
-    </Card.Body>
-  </Card>
+    <Container>
+      <Row>
+        <Col >
+          Good Morning Vinnie
+            <br></br>
+          6:30
+        </Col>
+        <Col className='right-column'>
+          Hellow Vinnie!
+        </Col>
+      </Row>
+      <Row>
+      <Col className='weather_card order-first' xs={2} order-first>
+          Sunday
+            <br></br>
+          May 07, 2023
+        </Col>
+        <Col className='weekly_forcast order-last' order-last>
+            <Col className='weeklu_tab'></Col>
+        </Col>
+        </Row>
+    </Container>
   );
 }
 
-export default Header;
+export default AutoLayoutExample;

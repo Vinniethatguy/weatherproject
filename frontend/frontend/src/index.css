@@ -2,42 +2,53 @@ body{
   position: relative;
   width: 1512px;
   height: 982px;
-  background-color: rgb(55, 70, 97);
 }
 
-.card-body {
-  position: absolute;
+* {background-color: rgb(81, 137, 240);
+}
+
+.col{
+  background-color: rgb(255, 255, 255);
+  border-radius: 33px;
   width: 450px;
   height: 119px;
-  left: 91px;
   top: 14px;
-  background: #E9D8A6;
+  left: 91px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.right-column.col{
+  text-align: right;
+}
+
+.weather_card.col-2{
+  width: 400px;
+  height: 500px;
+  left: 91px;
+  top: 163px;
+  background-color: #E9D8A6;
   border-radius: 33px;
 }
 
-#text{
-  height: 29px;
-  width: 209px;
-  left: 129px;
-  top: 38px;
-  border-radius: nullpx;
+.weekly_forcast{
+  width: 890px;
+  height: 500px;
+  left: 486px;
+  top: 163px;
+  background-color: #87BFFF;
 }
 
-.time card-text{
-position: absolute;
-height: 29px;
-width: 209px;
-left: 129px;
-top: 38px;
-border-radius: nullpx;
-
-
-}
-
-.time{
-  position: absolute;
-width: 74px;
-height: 29px;
-left: 129px;
-top: 81px;
+.weekly_tab.col{
+  height: 244px;
+  width: 620px;
+  left: 608px;
+  top: 338px;
+  border-radius: 33px;
+  background-color: blue;
 }
