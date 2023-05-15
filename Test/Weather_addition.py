@@ -22,7 +22,6 @@ def read_file():
 def main():
     information = read_file()
     for line in information:
-        print(line)
         # new_line = (city, state_name, state_id, latitude, longitude, zipcodes)
         data = {
             "city": line[0],
@@ -33,9 +32,9 @@ def main():
             "zip_codes": line[5]
         }
         response = requests.post('http://127.0.0.1:8000/weather/add_city/',data=data)
-        print(response)
-        print(response.content)
-        break
+        print(data['city'], response.status_code)
+
+    print("finished!")
 
 
 if __name__ == "__main__":

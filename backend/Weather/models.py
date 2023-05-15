@@ -1,6 +1,6 @@
 from django.db import models
 
-class Locations(models.Model):
+class Location(models.Model):
     city = models.TextField(max_length=50)
     state = models.TextField(max_length=50)
     state_id = models.TextField(max_length=5)
@@ -8,13 +8,19 @@ class Locations(models.Model):
     latitude = models.TextField(max_length=50)
     class Meta:
         unique_together = ('city', 'state_id')
+    
+    def __str__(self):
+        return f"{self.city} {self.state_id}"
      
     
 class Zip(models.Model):    
     zipcode = models.TextField(max_length=20)
-    location_id = models.ForeignKey(Locations, on_delete = models.CASCADE)
+    location_id = models.ForeignKey(Location, on_delete = models.CASCADE)
     class Meta:
         unique_together = ('zipcode', 'location_id')
+        
+    def __str__(self):
+        return f"{self.zipcode} {self.location_id}"
         
     
 
