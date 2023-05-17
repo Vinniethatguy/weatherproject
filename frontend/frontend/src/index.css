@@ -44,11 +44,20 @@ body,
   background-color: #87BFFF;
 }
 
-.weekly_tab.col{
+.weeklu_tab.col{
+  position: absolute;
   height: 244px;
   width: 620px;
-  left: 608px;
-  top: 338px;
+  left: 66%;
+  top: 45%;
+  transform: translate(-50%, -50%);
   border-radius: 33px;
   background-color: blue;
+}
+
+.sunny-image{
+  height: 200px;
+  width: 200px;
+  left: 66%;
+  top: 45%;
 }
