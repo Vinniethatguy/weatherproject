@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './header';
+import Weather from './weather';
+import SunnyImage from './SunnyImage';
 
 function App() {
   const [data, setData] = useState([]);
@@ -20,6 +22,7 @@ function App() {
     <div>
       <Header></Header>
        <ul>
+        <Weather></Weather>
       </ul>
     </div>
   );

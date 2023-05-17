@@ -1,25 +1,22 @@
-import Card from "react-bootstrap/Card";
-import React from "react";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
-
-function Header() {
+function AutoLayoutExample() {
   return (
-    <Card>
-    <Card.Body>
-      <Card.Subtitle>
-      </Card.Subtitle>
-      <Card.Text className="userIntro" >
-      Good Morning Vinnie 
-      <br />
-      <br />
-      <br />
-      <br />
-      <Card.Text>12:30PM</Card.Text>
-        
-      </Card.Text>
-    </Card.Body>
-  </Card>
+    <Container>
+      <Row>
+        <Col >
+          Good Morning Vinnie
+            <br></br>
+          6:30
+        </Col>
+        <Col className='right-column'>
+          Hellow Vinnie!
+        </Col>
+      </Row>
+
+    </Container>
   );
 }
 
-export default Header;
+export default AutoLayoutExample;
