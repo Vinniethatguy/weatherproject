@@ -18,7 +18,7 @@
 			(
 			day_of_the_week(str), 
 			full_date("month Date, Year")(str), 
-			temp(int), 
+			temp(int) -> Null on every day but the first, 
 			lowtemp(int), 
 			hightemp(int)), (...)]
 			URL(WEATHER IMAGE)(str)
