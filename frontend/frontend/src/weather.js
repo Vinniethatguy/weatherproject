@@ -13,11 +13,13 @@ function Weather() {
           <br></br>
           Columbia, MO
           <br></br>
-          <img className="sunny-image" src={sunnyImage} alt='' style={{ position: 'absolute', top: 10, left: 10, background: 'transparent' }} />
+          <img className="sunny-image" src={sunnyImage} alt='' />
 
         </Col>
         <Col className='weekly_forcast' order-last>
-          <Col className='weeklu_tab'></Col>
+          <Col className='weekly_tab'>
+            <img className='weekly_image' src={sunnyImage} alt='' />
+          </Col>
         </Col>
       </Row>
     </Container>

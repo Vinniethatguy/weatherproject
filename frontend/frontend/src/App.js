@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './header';
 import Weather from './weather';
-import SunnyImage from './SunnyImage';
 
 function App() {
-  const [data, setData] = useState([]);
+  const [location, setLocation] = useState('');
+  const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
     axios.get('http://127.0.0.1:4000/test/')
       .then(response => {
-        console.log(response.data)
-        setData(response.data);
+        console.log(response.data);
+        const { location, days } = response.data.weatherInfo;
+        setLocation(location);
+        setWeatherData(days);
       })
       .catch(error => {
         console.log(error);
@@ -20,10 +22,18 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-       <ul>
-        <Weather></Weather>
-      </ul>
+      <Header />
+      <br />
+      {location && (
+        <div>
+          <h2>Location: {location}</h2>
+          <p>{weatherData[0][1]}</p>
+          <p>{weatherData[0][0]}</p>
+          <p>{weatherData[0][2]}</p>
+          <p>{weatherData[0][3]}</p>
+          <Weather data={weatherData} />
+        </div>
+      )}
     </div>
   );
 }

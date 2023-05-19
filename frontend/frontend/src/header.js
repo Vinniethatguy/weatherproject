@@ -5,7 +5,7 @@ function AutoLayoutExample() {
   return (
     <Container>
       <Row>
-        <Col >
+        <Col  >
           Good Morning Vinnie
             <br></br>
           6:30
