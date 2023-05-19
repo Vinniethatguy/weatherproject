@@ -24,14 +24,9 @@ function App() {
     <div>
       <Header />
       <br />
-      {location && (
+      {location && weatherData.length > 0 && (
         <div>
-          <h2>Location: {location}</h2>
-          <p>{weatherData[0][1]}</p>
-          <p>{weatherData[0][0]}</p>
-          <p>{weatherData[0][2]}</p>
-          <p>{weatherData[0][3]}</p>
-          <Weather data={weatherData} />
+          <Weather location={location} dayData={weatherData[0]} />
         </div>
       )}
     </div>
