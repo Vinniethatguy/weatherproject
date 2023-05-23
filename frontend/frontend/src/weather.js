@@ -2,22 +2,24 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import sunnyImage from './sunny.svg';
 
-function Weather() {
+function Weather({ location, dayData }) {
   return (
     <Container>
       <Row>
         <Col className='weather_card' xs={2} order-first>
-          Sunday
-          <br></br>
-          May 07, 2023
-          <br></br>
-          Columbia, MO
-          <br></br>
-          <img className="sunny-image" src={sunnyImage} alt='' style={{ position: 'absolute', top: 10, left: 10, background: 'transparent' }} />
-
+          {/* Display weather information */}
+          <span>{dayData[0]}</span>
+          <br />
+          <span>{dayData[1]}</span>
+          <br />
+          <span>{location}</span>
+          <br />
+          <img className="sunny-image" src={sunnyImage} alt='' />
         </Col>
         <Col className='weekly_forcast' order-last>
-          <Col className='weeklu_tab'></Col>
+          <div className='weekly_tab'>
+            
+          </div>
         </Col>
       </Row>
     </Container>

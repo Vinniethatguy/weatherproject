@@ -1,11 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
+
 function AutoLayoutExample() {
   return (
     <Container>
       <Row>
-        <Col >
+        <Col  >
           Good Morning Vinnie
             <br></br>
           6:30
