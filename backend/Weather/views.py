@@ -11,7 +11,15 @@ class WeatherDataView(APIView):
         location =  Zip.objects.filter(zipcode=zip_code)
         if len(location) > 0:
             print(location)
-            return Response("weather city getter")
+            city_loc = location[0].location_id
+            print(city_loc.city)
+            data = {
+                'weatherInfo' : {
+                    'location' : f'{city_loc.city} {city_loc.state_id}',
+                    'days' : Weather.openweather.weather_project_json(city_loc.latitude, city_loc.longitude)
+                }
+            }
+            return Response(data)
         else:
             return Response("no valid location")
 

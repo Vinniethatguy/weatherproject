@@ -1,7 +1,7 @@
 import requests
 
 def main():
-    response = requests.get('http://127.0.0.1:2000/weather/data/58801/')
+    response = requests.get('http://127.0.0.1:2000/weather/data/30008/')
     print(response.content)
     print(response.status_code)
 

@@ -57,6 +57,7 @@ def weather_project_json(lat, lon):
             
         for x in full_data:
             print(x)
+        return full_data
 
     else:
         print("No Api Key Provided")
