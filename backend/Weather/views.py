@@ -3,6 +3,17 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .seraializers import ZipSerializer, LocationSerializer
 from .models import Location, Zip
+import Weather.openweather
+
+
+class WeatherDataView(APIView):
+    def get(self, request, zip_code):
+        location =  Zip.objects.filter(zipcode=zip_code)
+        if len(location) > 0:
+            print(location)
+            return Response("weather city getter")
+        else:
+            return Response("no valid location")
 
 
 class AddCityView(APIView):

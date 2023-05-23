@@ -31,7 +31,7 @@ def main():
             "longitude": line[4],
             "zip_codes": line[5]
         }
-        response = requests.post('http://127.0.0.1:8000/weather/add_city/',data=data)
+        response = requests.post('http://127.0.0.1:2000/weather/add_city/',data=data)
         print(data['city'], response.status_code)
 
     print("finished!")
