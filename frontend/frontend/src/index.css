@@ -71,7 +71,7 @@ span{
 }
 
 .rectangle-column {
-  background-image: linear-gradient(rgb(179, 175, 197), rgb(2, 34, 140));
+  background-image: linear-gradient(rgb(241, 29, 188), rgb(2, 34, 140));
   border-radius: 33px;
   display: flex;
   justify-content: center;
@@ -80,7 +80,33 @@ span{
   height: 200px; /* Adjust the height as needed */
   margin: 0 auto; /* Center the column horizontally */
   position: relative;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   left: auto;
+}
+
+.search.bar.col {
+  background-image: linear-gradient(rgb(205, 16, 16), rgb(46, 2, 103));
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  left: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  height: 82px;
+  width: 495px;
+  color: azure;
+  font-family: 'Cormorant Garamond';
+}
+
+.temp{
+  font-family: 'Cormorant Garamond';
+  position: absolute;
+  width: 144px;
+  height: 102px;
+  left: 200px;
+  top: 544px;
+  font-size: 50px;
 }

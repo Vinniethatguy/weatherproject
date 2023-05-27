@@ -17,11 +17,13 @@ function Weather({ location, dayData }) {
           <br />
           <img className="sunny-image" src={sunnyImage} alt='' />
           <br></br>
-          
+          <span className='temp'>{dayData[2]}</span>
         </Col>
         <Col className='weekly_forcast' order-last>
         <Col className="rectangle-column"></Col>
+        <Col className='search bar'> Change Location</Col>
         </Col>
+        
       </Row>
     </Container>
   );
