@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import sunnyImage from './sunny.svg';
+import Card from 'react-bootstrap/Card';
 
 function Weather({ location, dayData }) {
   return (
@@ -15,12 +16,14 @@ function Weather({ location, dayData }) {
           <span>{location}</span>
           <br />
           <img className="sunny-image" src={sunnyImage} alt='' />
+          <br></br>
+          <span className='temp'>{dayData[2]}</span>
         </Col>
         <Col className='weekly_forcast' order-last>
-          <div className='weekly_tab'>
-            
-          </div>
+        <Col className="rectangle-column"></Col>
+        <Col className='search bar'> Change Location</Col>
         </Col>
+        
       </Row>
     </Container>
   );
