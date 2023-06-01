@@ -13,7 +13,7 @@ def current_weather_data_seperator(data):
     day_of_week = date_object.strftime('%A')
     date_time = f'{calendar.month_name[time[1]]} {time[2]}, {time[0]}'
     # data['weather'][0]['main']
-    url_setter = f"{data['weather'][0]['main']}, {data['weather'][0]['description']}"
+    url_setter = f"{data['weather'][0]['icon']}"
     temp = data['main']['temp']
     low_temp = data['main']['temp_min']
     high_temp = data['main']['temp_max']
@@ -27,7 +27,7 @@ def day_data_seperator(data):
     high_temp = float('-inf')
     day_of_week = date_object.strftime('%A')
     date_time = f'{calendar.month_name[time[1]]} {time[2]}, {time[0]}'
-    url_setter = f"{data[4]['weather'][0]['main']}, {data[4]['weather'][0]['description']}"
+    url_setter = f"{data[4]['weather'][0]['icon']}"
 
     for index, hour_set in enumerate(data):
         if hour_set['main']['temp_min'] < low_temp:
