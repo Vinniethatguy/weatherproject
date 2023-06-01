@@ -21,6 +21,17 @@ class Zip(models.Model):
         
     def __str__(self):
         return f"{self.zipcode} {self.location_id}"
+    
+    
+class Weather_icon(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.FileField(upload_to ='weather_icon/')
+    
+    def __str__(self):
+        return f"{self.name}"
+    
+
+    
         
     
 
