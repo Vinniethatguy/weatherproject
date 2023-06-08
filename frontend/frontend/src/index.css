@@ -107,3 +107,13 @@ input.search-bar {
   top: 544px;
   font-size: 50px;
 }
+
+.image-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.image-wrapper {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Optional: Add spacing between images */
+}

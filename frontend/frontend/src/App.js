@@ -8,7 +8,7 @@ function App() {
   const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:4000/test/')
+    axios.get('http://localhost:4000/weather/data/64109/')
       .then(response => {
         console.log(response.data);
         const { location, days } = response.data.weatherInfo;
@@ -26,7 +26,7 @@ function App() {
       <br />
       {location && weatherData.length > 0 && (
         <div>
-          <Weather location={location} dayData={weatherData[0]} />
+          <Weather location={location} dayData={weatherData} />
         </div>
       )}
     </div>

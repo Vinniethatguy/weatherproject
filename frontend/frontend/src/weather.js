@@ -1,29 +1,55 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import sunnyImage from './sunny.svg';
 
 function Weather({ location, dayData }) {
+  const currentDay = dayData[0]; 
+  const nextFourDays = dayData.slice(1, 5); 
+
   return (
     <Container>
       <Row>
         <Col className='weather_card' xs={2} order-first>
-          <span>{dayData[0]}</span>
-          <br />
-          <span>{dayData[1]}</span>
-          <br />
-          <span>{location}</span>
-          <br />
-          <img className="sunny-image" src={sunnyImage} alt='' />
-          <br></br>
-          <span className='temp'>{dayData[2]}</span>
+          <div className='weather_info'>
+            <span>{currentDay[0]}</span>
+            <br />
+            <span>{currentDay[1]}</span>
+            <br />
+            <span>{location}</span>
+            <br />
+            <img
+              className="weather-image"
+              src={currentDay[5]}
+              alt=''
+              style={{ width: '100px', height: '100px' }}/>
+          </div>
         </Col>
         <Col className='weekly_forcast' order-last>
-        <Col className="rectangle-column">
-          
+          <div className="image-container">
+            {nextFourDays.map((day, index) => (
+              <div key={index} className="image-wrapper">
+                <span>{day[0]}</span>
+                <br />
+                <span>{day[1]}</span>
+                <br />
+                <span>{location}</span>
+                <br />
+                <img
+                  className="weather-image"
+                  src={day[5]}
+                  alt=''
+                  style={{ width: '100px', height: '100px' }} 
+                />
+                <br />
+                <span className='temp'>{day[2]}</span> 
+                <br />
+                <span className='weather'>{day[3]}</span> 
+                <br />
+                <span className='temp'>{currentDay[3]}</span>
+                <hr />
+              </div>
+            ))}
+          </div>
         </Col>
-        <input className="search-bar" type="search" />
-        </Col>
-        
       </Row>
     </Container>
   );
