@@ -68,13 +68,13 @@ span{
   background: transparent;
 }
 
-.rectangle-column {
-  background: #005F73;  border-radius: 33px;
+.weekly-container {
+  border-radius: 33px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 495px; /* Adjust the width as needed */
-  height: 200px; /* Adjust the height as needed */
+  width: 530px; /* Adjust the width as needed */
+  height: 295px; /* Adjust the height as needed */
   margin: 0 auto; /* Center the column horizontally */
   position: relative;
   top: 45%;
