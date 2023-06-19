@@ -117,3 +117,11 @@ input.search-bar {
   flex: 0 0 auto;
   margin-right: 10px; /* Optional: Add spacing between images */
 }
+
+.weather-image{
+  width: 300px; 
+  height: 300px ;
+  color: white ;
+}
+
+/* width: '300px', height: '300px'  */

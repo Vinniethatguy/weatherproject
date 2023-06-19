@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Weather({ location, dayData }) {
   const currentDay = dayData[0]; 
-  const nextFourDays = dayData.slice(1, 5); 
+  const nextFourDays = dayData.slice(1, 6); 
 
   return (
     <Container>
@@ -19,8 +19,7 @@ function Weather({ location, dayData }) {
             <img
               className="weather-image"
               src={currentDay[5]}
-              alt=''
-              style={{ width: '100px', height: '100px' }}/>
+              alt=''/>
               <span className='temp'>{currentDay[3]}</span>
           </div>
         </Col>
@@ -35,22 +34,24 @@ function Weather({ location, dayData }) {
                 <span>{location}</span>
                 <br />
                 <img
-                  className="weather-image"
+                  className="weekly-images"
                   src={day[5]}
                   alt=''
-                  style={{ width: '100px', height: '100px', color: "white" }} 
                 />
                 <br />
                 <span className='temp'>{day[2]}</span> 
                 <br />
-                <span className='weather'>{day[3]}</span> 
+                <span className='weather'>L: {day[3]}</span> 
+                <br></br>
+                <span className='weather'>H {day[4]}</span> 
                 <br />
-
-                
-                <hr />
+                <p>Hello
+                  Hello
+                </p>
               </div>
             ))}
           </div>
+
         </Col>
       </Row>
     </Container>
