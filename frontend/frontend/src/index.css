@@ -43,6 +43,10 @@ body,
   background-color: #87BFFF;
 }
 
+img.weekly-images{
+  color: white;
+}
+
 .card-body{
   position: absolute;
   height: 500px;
@@ -82,18 +86,17 @@ span{
   left: auto;
 }
 
-input.search-bar {
+.search_bar {
   background: #E9D8A6;  position: relative;
   top: 40%;
-  transform: translateY(-50%);
+  transform: translateY(90%);
   left: auto;
   justify-content: center;
   align-items: center;
   display: flex;
   margin: 0 auto;
   height: 82px;
-  width: 495px;
-  
+  width: 645px;
   font-family: 'Cormorant Garamond';
   border-radius: 33px; 
 }
@@ -103,8 +106,8 @@ input.search-bar {
   position: absolute;
   width: 144px;
   height: 102px;
-  left: 200px;
-  top: 544px;
+  left: 12%;
+  top: 53%;
   font-size: 50px;
 }
 
@@ -125,3 +128,14 @@ input.search-bar {
 }
 
 /* width: '300px', height: '300px'  */
+
+.card {
+  height: 200px;
+}
+
+button{
+  height: 100px;
+  width: 100px;
+  
+
+}
