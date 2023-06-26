@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Weather from './weather';
+import './Components/lava_lamp.scss'
+
 
 
 function App() {
@@ -67,7 +69,36 @@ function App() {
         <button onClick={buttonZipChange}></button>
         
       </div>
+      
+
+      <section class="sticky">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+          </div>
+        </section>
+
+
+
     </div>
+
+    
+    
+
+
   );
 }
 
