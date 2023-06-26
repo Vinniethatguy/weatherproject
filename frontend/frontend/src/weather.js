@@ -25,7 +25,7 @@ function Weather({ location, dayData }) {
           <div className="weekly-container">
             {nextFourDays.map((day, index) => (
               <div key={index} className="image-wrapper">
-                <Card style={{ width: '8rem', backgroundColor: '#005F73', color: '#FFFFFF' }}>
+                <Card style={{ width: '8rem', backgroundColor: '#005F73', color: '#FFFFFF', width: '5.5rem'}}>
                   <span>{day[0]}</span>
                   <br />
                   <span>{day[1]}</span>
