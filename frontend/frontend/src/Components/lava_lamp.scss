@@ -5,7 +5,7 @@ body,html{
   body{
     margin:0;
     padding:0;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background: linear-gradient(170deg, #005F73 0%, #3D1C51 100%);
 }
   .bubbles{
     position:absolute;
@@ -22,7 +22,7 @@ body,html{
     width:40px;
     height: 40px;
     background:#8a9299;
-    border-radius:50%;
+    border-radius:30%;
     opacity:0.5;
     animation: rise 10s infinite ease-in;
   }
@@ -48,6 +48,8 @@ body,html{
     left:35%;
     animation-duration:7s;
     animation-delay:2s;
+    border-radius:30%;
+
   }
   .bubble:nth-child(4){
     width:80px;

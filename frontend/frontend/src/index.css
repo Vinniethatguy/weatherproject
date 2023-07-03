@@ -133,9 +133,28 @@ span{
   height: 200px;
 }
 
-button{
-  height: 100px;
-  width: 100px;
-  
 
+
+/* .input-container {
+  display: flex;
+  align-items: center;
+} */
+
+.input-wrapper {
+  position: relative;
+}
+
+.search_bar, button {
+  padding-right: 40px; /* Adjust this value to leave space for the button */
+}
+
+button{
+  height: 82px;
+  width: 82px;
+  padding: 0;
+  border-radius: 30px !important;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 200px;
 }

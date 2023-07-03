@@ -58,17 +58,15 @@ function App() {
         </div>
       )}
       <div>
-      
-        <input
-          type="text"
-          placeholder="Change Zip Code"
-          value={changeZip}
-          onChange={handleZipCodeChange}
-          className='search_bar'
-        />
-        <button onClick={buttonZipChange}></button>
-        
-      </div>
+  <input
+    type="text"
+    placeholder="Change Zip Code"
+    value={changeZip}
+    onChange={handleZipCodeChange}
+    className='search_bar'
+  />
+</div>
+<button onClick={buttonZipChange}></button>
       
 
       <section class="sticky">
