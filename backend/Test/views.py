@@ -2,6 +2,8 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
+#first endpoint to test how data is displayed
+
 class Test(APIView):
     def get(self, request):
         data = {

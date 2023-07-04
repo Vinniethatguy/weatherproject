@@ -4,6 +4,7 @@ import datetime
 import calendar
 from .models import Weather_icon
 
+#weather assosication with image
 def weather_association(weather_condition):
     values= {
         '01d' : "clear_sky",
@@ -96,3 +97,5 @@ def weather_project_json(lat, lon):
         return full_data
     else:
         print("No Api Key Provided")
+
+#only in intervals of 3 hours(time)

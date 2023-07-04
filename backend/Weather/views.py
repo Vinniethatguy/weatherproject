@@ -5,7 +5,6 @@ from .seraializers import ZipSerializer, LocationSerializer
 from .models import Location, Zip
 import Weather.openweather
 
-
 class WeatherDataView(APIView):
     def get(self, request, zip_code):
         location =  Zip.objects.filter(zipcode=zip_code)
@@ -23,7 +22,7 @@ class WeatherDataView(APIView):
         else:
             return Response("no valid location")
 
-
+#add to database
 class AddCityView(APIView):
     def get(self, request):
         return Response("Add city get finder")
